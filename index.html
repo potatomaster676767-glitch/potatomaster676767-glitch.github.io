@@ -9,57 +9,219 @@
 <style>
 
 #otsikko {
-          font-size : 35px;
-          color : Gold;
-          position : absolute;
-          top : 75px;
-          left : 450px;
-          border : solid 5px Gold;
-          width: 300px;
-          height: 75px;
-         padding: 15px;
-         text-align: center;
-        border-radius: 15px;
-        background: blue;
+  background: blue;
+  padding: 35px 60px;
+  border: 3px solid #ffd36b;
+  box-shadow: 0 0 15px #ffd36b;
+  border-radius: 12px;
+  display: inline-block;
+  position : absolute;
+  left : 860px;
+  top : 100px;
+  font-size : 25px;
+  color : gold;
+  
+}
+
+.otsikko {
+  color: #ffedb0;
+  margin: 0;
+  font-size: 2.6rem;
+  text-shadow:
+    0 0 6px #ffedb0,
+    0 0 12px #ffc85e;
 }
 
 #linkit {
          position : absolute;
          top: 210px;
-         left : 100px;
+         left : 50px;
          font-size : 25px;
 }
 
 .linkstuff {
-        text-decoration : none;
-        color: Gold;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #FFC72C; /* Warriors Gold text */
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #1D428A; /* Warriors Blue border */
+    border-radius: 8px;
+
+    /* Neon gold glow */
+    box-shadow:
+      0 0 8px #FFC72C,
+      0 0 15px #FFC72C,
+      inset 0 0 8px #FFC72C;
+    
+    background-color: #1D428A22; /* slight transparent blue */
+    transition: 0.25s ease;
+  }
+
+  .linkstuff:hover {
+    box-shadow:
+      0 0 10px #FFC72C,
+      0 0 20px #FFC72C,
+      0 0 30px #FFC72C,
+      inset 0 0 10px #FFC72C;
+    transform: translateY(-2px);
+  
+  color: #ffd85e;
+  text-shadow: 0 0 6px #ffd85e, 0 0 12px #ffb300;
+  text-decoration: none;
+  transition: text-shadow 0.25s ease, color 0.25s ease;
 }
 
 .linkstuff:hover {
-          color : Blue;
-          text-decoration : underline;
+  text-shadow: 0 0 15px #ffd85e, 0 0 30px #ffb300;
+}
+
+#jerseylink {
+             position : absolute;
+             top : 280px;
+             left : 270px;
+             font-size : 20px;
+}
+
+.jerseylink {
+    display: inline-block;
+    padding: 12px 20px;
+    color: #FFC72C; /* Warriors Gold text */
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #1D428A; /* Warriors Blue border */
+    border-radius: 8px;
+
+    /* Neon gold glow */
+    box-shadow:
+      0 0 8px #FFC72C,
+      0 0 15px #FFC72C,
+      inset 0 0 8px #FFC72C;
+    
+    background-color: #1D428A22; /* slight transparent blue */
+    transition: 0.25s ease;
+  }
+
+  .jerseylink:hover {
+    box-shadow:
+      0 0 10px #FFC72C,
+      0 0 20px #FFC72C,
+      0 0 30px #FFC72C,
+      inset 0 0 10px #FFC72C;
+    transform: translateY(-2px);
+
+  }
+
+
+#secondlink {
+             position : absolute;
+             top : 210px;
+             left : 330px;
+             font-size : 20px;
+}
+
+.secondlink {
+    display: inline-block;
+    padding: 15.5px 23.5px;
+    color: #FFC72C; /* Warriors Gold text */
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #1D428A; /* Warriors Blue border */
+    border-radius: 8px;
+
+    /* Neon gold glow */
+    box-shadow:
+      0 0 8px #FFC72C,
+      0 0 15px #FFC72C,
+      inset 0 0 8px #FFC72C;
+    
+    background-color: #1D428A22; /* slight transparent blue */
+    transition: 0.25s ease;
+  }
+
+  .secondlink:hover {
+    box-shadow:
+      0 0 10px #FFC72C,
+      0 0 20px #FFC72C,
+      0 0 30px #FFC72C,
+      inset 0 0 10px #FFC72C;
+    transform: translateY(-2px);
+    text-shadow: 0 0 15px #ffd85e, 0 0 30px #ffb300;
+
+  }
+  color: #ffd85e;
+  text-shadow: 0 0 6px #ffd85e, 0 0 12px #ffb300;
+  text-decoration: none;
+  transition: text-shadow 0.25s ease, color 0.25s ease;
+}
+ .secondlink:hover {
+  text-shadow: 0 0 15px #ffd85e, 0 0 30px #ffb300;
 
 }
 
+#logo {
+
+<svg width="240" height="60">
+    <line x1="0" y1="30" x2="40" y2="30" stroke="#0A66C2" stroke-width="6"/>
+    <text x="50" y="38" 
+          font-size="28" font-family="Inter, sans-serif" fill="#222" font-weight="700">
+      CorpTech
+    </text>
+  </svg>
+</div>
+     
+}
+
+@keyframes anim {
+
+                  0% {transform : rotateY(0deg);}
+                  25% {transform: rotateY(90deg);}
+                  50% {transform: rotateY(180deg);}
+                  75% {transform: rotateY(270deg);}
+                 100% {transform: rotateY(360deg);}
+
+}
 
 #center {
-        position : absolute;
-        top : 200px;
-        left : 320px;
-        font-size : 25px;
-        border : solid 1px Gold;
-        width : 700px;
-        height : 200px;
-        overflow : auto;
-        border-radius : 10px;
-        padding : 10px;
+  position : absolute;
+  top : 200px;
+  width : 350px;
+  height : 300px;
+  overflow : auto;
+  left : 780px;
+  background: blue; /* deep blue */
+  padding: 40px 70px;
+  border: 3px solid #ffdf7f; 
+  border-radius: 12px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  color : #F4D03F;
+  font-size : 25px;
+  /* neon glow */
+  box-shadow:
+    0 0 10px #ffdf7f,
+    0 0 20px #ffbf3f,
+    0 0 40px #ff9f1a;
+}
+
+.center h1 {
+  color: #ffeaa6;
+  font-size: 2.7rem;
+  margin: 0;
+  text-align: center;
+
+  /* neon gold text glow */
+  text-shadow:
+    0 0 5px #ffeaa6,
+    0 0 10px #ffdf7f,
+    0 0 20px #ffbf3f,
+    0 0 35px #ff9f1a;
 }
 
 body {
-      background : url("warriors.png");
-      background-repeat : no-repeat;
-      background-position : 470px 200px;
-
+      background-color :#1D428A;
+      
 }
 
 </style>
@@ -70,8 +232,16 @@ body {
 
 <body>
         <div id="otsikko">
-	Golden State Warriors
+       Golden State Warriors
+
+      </a>
+
         </div>
+
+        <div id="logo">
+         <img src= "warriors.png" width="100px" />
+         </a>
+         </div>
 
        <div id="linkit">
        <a class="linkstuff" href="https://www.nba.com/warriors/roster" target="_blank">
@@ -79,9 +249,22 @@ body {
       </a>
       </div>
 
+      <div id="secondlink">
+      <a class="secondlink" href="https://www.basketball-reference.com/teams/GSW/" target="blank">
+      Golden State's awards and history
+      </a>
+      </div>
+
+      <div id="jerseylink"
+      <a class="jerseylink" href="https://shop.warriors.com/golden-state-warriors-jerseys/t-47364096+d-563851639+z-7-2525263768" target="blank">
+      Jerseys
+     </a>
+     </div>
+
       <div id="center">
        The Golden State Warriors are an American professional basketball team based in San Francisco. The Warriors compete in the National Basketball Association (NBA) as a member of the Pacific Division of the Western Conference. Founded in 1946 in Philadelphia, the Warriors moved to the San Francisco Bay Area in 1962 and took the city's name before changing its geographic moniker to Golden State in 1971. The team plays its home games at Chase Center.
-
+<br />
+Nicknamed the "Dubs" as a shortening of "W's", the Warriors hold several NBA records: best regular season, most wins in a season (regular season and postseason combined), and best postseason run. Curry and Thompson are generally considered among the greatest backcourts of all time. The Warriors rank third for the most NBA championships and Finals appearances in NBA history, trailing only the Los Angeles Lakers and Boston Celtics. Chamberlain and Curry are the only players in franchise history to win the league MVP award, for a total of three awards.
       </div>
 
 </body>
